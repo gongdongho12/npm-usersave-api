@@ -6,7 +6,7 @@ const basePath: string = "/user/save"
 class UserSaveAPI extends UserAPI {
 
   getSaveListQuery = (query: string) => this.getAxiosInstance()
-    .get(`${basePath}/filter`, {
+    .post(`${basePath}/filter`, null, {
       params: {
         key: query
       }
