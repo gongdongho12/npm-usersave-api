@@ -1,6 +1,6 @@
 {
   "name": "@storelink-io/storelink-usersave-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "스토어링크 사용자 저장 API 모듈",
   "repository": {
     "type": "git",
@@ -11,6 +11,10 @@
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "_moduleAliases": {
     "@src": "src"
   },
