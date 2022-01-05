@@ -1,6 +1,6 @@
 {
   "name": "@storelink-io/storelink-usersave-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "스토어링크 사용자 저장 API 모듈",
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development node dist/index.js",
-    "build": "tsc --build",
+    "build": "tsc && tsc-alias",
+    "build:watch": "tsc -w & tsc-alias -w",
     "clean": "tsc --build --clean"
   },
   "author": "",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@types/es6-promise": "^3.3.0",
     "module-alias": "^2.2.2",
+    "tsc-alias": "^1.5.0",
     "typescript": "^4.5.4"
   },
   "dependencies": {
