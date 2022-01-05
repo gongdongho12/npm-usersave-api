@@ -1,7 +1,7 @@
 import axios from "axios";
 import createAuthRefreshInterceptor from "axios-auth-refresh";
 import { apiMeta } from "meta";
-import { Promise } from 'es6-promise'
+import { Promise } from 'es6-promise';
 const { localConfig, devConfig, prodConfig } = apiMeta;
 
 class UserAPI {
