@@ -23,7 +23,8 @@
     "start": "NODE_ENV=development node dist/index.js",
     "build": "tsc && tsc-alias",
     "build:watch": "tsc -w & tsc-alias -w",
-    "clean": "tsc --build --clean"
+    "clean": "tsc --build --clean",
+    "publish": "npm publish"
   },
   "author": "",
   "license": "ISC",
