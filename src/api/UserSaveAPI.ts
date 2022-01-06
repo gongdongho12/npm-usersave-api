@@ -1,14 +1,15 @@
 import UserAPI from 'api/UserAPI';
-import { UserSave } from "meta";
+import { UserSave, Pageable } from "meta";
 
 const basePath: string = "/user/save"
 
 class UserSaveAPI extends UserAPI {
 
-  getSaveListQuery = (query: string) => this.getAxiosInstance()
+  getSaveListQuery = (query: string, pageable: Pageable) => this.getAxiosInstance()
     .post(`${basePath}/filter`, null, {
       params: {
-        key: query
+        key: query,
+        ...pageable
       }
     })
     .then((res: any) => {
