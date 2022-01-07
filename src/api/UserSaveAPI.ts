@@ -18,6 +18,19 @@ class UserSaveAPI extends UserAPI {
       return data;
     });
   
+  getSavePageableQuery = (query: string, pageable: Pageable) => this.getAxiosInstance()
+    .post(`${basePath}/filter/pageable`, null, {
+      params: {
+        key: query,
+        ...pageable
+      }
+    })
+    .then((res: any) => {
+      const { data } = res;
+      console.log("getSavePageableQuery data", data);
+      return data;
+    });
+  
   addUserSave = (data: UserSave) => this.getAxiosInstance().post(
     basePath,
     data
