@@ -1,6 +1,6 @@
 {
   "name": "@storelink-io/storelink-usersave-api",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "스토어링크 사용자 저장 API 모듈",
   "repository": {
     "type": "git",

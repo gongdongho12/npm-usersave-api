@@ -26,7 +26,7 @@ class UserSaveAPI extends UserAPI {
       }
     })
     .then((res: any) => {
-      const { data }: { data: PageableData } = res;
+      const { data }: { data: PageableData<UserSave> } = res;
       console.log("getSavePageableQuery data", data);
       return data;
     });

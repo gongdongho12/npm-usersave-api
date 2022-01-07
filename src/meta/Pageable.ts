@@ -4,7 +4,7 @@ export interface Pageable {
   sort: string;
 }
 
-export interface PageableData {
+export interface PageableData<T> {
   total: number;
-  data: any[];
+  (data: T[]): T[];
 }

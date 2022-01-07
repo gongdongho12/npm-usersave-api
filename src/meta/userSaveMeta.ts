@@ -1,6 +1,6 @@
 export interface UserSave {
   id?: number,
-  userId: string,
+  userId?: string,
   dataKey: string,
   data: string,
   private?: boolean,
