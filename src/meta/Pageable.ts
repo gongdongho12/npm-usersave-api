@@ -6,5 +6,5 @@ export interface Pageable {
 
 export interface PageableData<T> {
   total: number;
-  (data: T[]): T[];
+  data: T[];
 }
