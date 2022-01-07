@@ -13,11 +13,11 @@ class UserSaveAPI extends UserAPI {
       return data
     })
   
-  getSaveListQuery = (query: string, pageable: Pageable) => this.getAxiosInstance()
+  getSaveListQuery = (query: string, pageable?: Pageable) => this.getAxiosInstance()
     .post(`${basePath}/filter`, null, {
       params: {
         key: query,
-        ...pageable
+        ...(pageable || {})
       }
     })
     .then((res: any) => {
@@ -26,11 +26,11 @@ class UserSaveAPI extends UserAPI {
       return data;
     });
   
-  getSavePageableQuery = (query: string, pageable: Pageable) => this.getAxiosInstance()
+  getSavePageableQuery = (query: string, pageable?: Pageable) => this.getAxiosInstance()
     .post(`${basePath}/filter/pageable`, null, {
       params: {
         key: query,
-        ...pageable
+        ...(pageable || {})
       }
     })
     .then((res: any) => {
