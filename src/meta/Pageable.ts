@@ -3,3 +3,8 @@ export interface Pageable {
   size: number;
   sort: string;
 }
+
+export interface PageableData {
+  total: number;
+  data: any[];
+}

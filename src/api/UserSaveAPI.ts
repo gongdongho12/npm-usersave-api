@@ -1,5 +1,5 @@
 import UserAPI from 'api/UserAPI';
-import { UserSave, Pageable } from "meta";
+import { UserSave, Pageable, PageableData } from "meta";
 
 const basePath: string = "/user/save"
 
@@ -26,7 +26,7 @@ class UserSaveAPI extends UserAPI {
       }
     })
     .then((res: any) => {
-      const { data } = res;
+      const { data }: { data: PageableData } = res;
       console.log("getSavePageableQuery data", data);
       return data;
     });
