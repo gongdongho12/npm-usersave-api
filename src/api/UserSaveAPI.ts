@@ -5,6 +5,14 @@ const basePath: string = "/user/save"
 
 class UserSaveAPI extends UserAPI {
 
+  getUserSaveById = (id: number) => this.getAxiosInstance()
+    .get(`${basePath}/${id}`)
+    .then((res: any) => {
+      const { data }: { data: UserSave } = res;
+      console.log("getSaveById data", data);
+      return data
+    })
+  
   getSaveListQuery = (query: string, pageable: Pageable) => this.getAxiosInstance()
     .post(`${basePath}/filter`, null, {
       params: {
@@ -35,7 +43,7 @@ class UserSaveAPI extends UserAPI {
     basePath,
     data
   ).then((res: any) => {
-      const { data } = res;
+      const { data }: { data: UserSave } = res;
       console.log("addUserSave data", data);
       return data;
     });
@@ -43,7 +51,7 @@ class UserSaveAPI extends UserAPI {
   editUserSave = (id: number, data: UserSave) => this.getAxiosInstance()
     .put(`${basePath}/${id}`, data)
     .then((res: any) => {
-      const { data } = res;
+      const { data }: { data: UserSave } = res;
       console.log("editUserSave data", data);
       return data;
     });
@@ -51,7 +59,7 @@ class UserSaveAPI extends UserAPI {
   deleteUserSave = (id: number) => this.getAxiosInstance()
     .delete(`${basePath}/${id}`)
     .then((res: any) => {
-      const { data } = res;
+      const { data }: { data: UserSave } = res;
       console.log("deleteUserSave data", data);
       return data;
     });
