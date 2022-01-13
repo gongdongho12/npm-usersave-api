@@ -5,13 +5,13 @@ const localConfig = {
 }
 
 const devConfig = {
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://friday-dev.storelink.io',
   timeout: 2500,
   headers: { 'Content-Type': 'application/json' }
 }
 
 const prodConfig = {
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://friday.storelink.io',
   timeout: 2500,
   headers: { 'Content-Type': 'application/json' }
 }
