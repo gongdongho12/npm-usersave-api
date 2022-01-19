@@ -18,11 +18,11 @@ npm install @storelink-io/storelink-usersave-api
 ## Usage
 
 ```ts
-import { UserSave } from '@storelink-io/storelink-usersave-api';
+import { UserSaveAPI } from '@storelink-io/storelink-usersave-api';
 
-const userSaveAPI = new UserSaveAPI("local")
+const userSave = new UserSaveAPI("local")
 
-userSaveAPI.getSaveListQuery("board%", {
+userSave.getSaveListQuery("board%", {
       size: 10,
       page: 0,
       sort: "createdDate,desc"
