@@ -3,7 +3,7 @@ import { Account } from "meta";
 
 class UserSaveAPI extends UserAPI {
   login = (email: string, password: string) => this.getAxiosInstance()
-  .post("/auth/sign-in", {
+  .post("/user/sign-in", {
     id: email,
     password,
   })
@@ -20,7 +20,7 @@ getAccount = () => this.getAxiosInstance().get("/user").then((res: any) => {
 });
 
 register = (account: Account) => this.getAxiosInstance()
-  .put("/auth/signup", account)
+  .put("/user/signup", account)
   .then((res: any) => {
     const { data } = res;
     console.log("register data", data);

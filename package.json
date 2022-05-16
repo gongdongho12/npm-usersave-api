@@ -1,10 +1,10 @@
 {
-  "name": "@storelink-io/storelink-usersave-api",
-  "version": "1.0.23",
-  "description": "스토어링크 사용자 저장 API 모듈",
+  "name": "@gongdongho12/npm-usersave-api",
+  "version": "1.0.0",
+  "description": "사용자 저장 API 모듈",
   "repository": {
     "type": "git",
-    "url": "https://github.com/storelink-io/storelink-usersave-api"
+    "url": "https://github.com/gongdongho12/npm-usersave-api"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

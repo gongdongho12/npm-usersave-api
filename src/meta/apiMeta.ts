@@ -5,13 +5,13 @@ const localConfig = {
 }
 
 const devConfig = {
-  baseURL: 'https://friday-dev.storelink.io',
+  baseURL: 'https://dev.dongholab.com',
   timeout: 2500,
   headers: { 'Content-Type': 'application/json' }
 }
 
 const prodConfig = {
-  baseURL: 'https://friday.storelink.io',
+  baseURL: 'https://dongholab.com',
   timeout: 2500,
   headers: { 'Content-Type': 'application/json' }
 }

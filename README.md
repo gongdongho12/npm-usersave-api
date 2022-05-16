@@ -1,24 +1,24 @@
-# storelink-usersave-api
+# npm-usersave-api
 
-> StoreLink UserSave API for JavaScript With TypeScript
+> Dongholab UserSave API for JavaScript With TypeScript
 
  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Set **.npmrc**
 .npmrc 수정
 ```
-@storelink-io:registry=https://npm.pkg.github.com/
+@gongdongho12:registry=https://npm.pkg.github.com/
 ```
 ## Install
 
 ```bash
-npm install @storelink-io/storelink-usersave-api
+npm install @gongdongho12/npm-usersave-api
 ```
 
 ## Usage
 
 ```ts
-import { UserSaveAPI } from '@storelink-io/storelink-usersave-api';
+import { UserSaveAPI } from '@gongdongho12/npm-usersave-api';
 
 const userSave = new UserSaveAPI("local")
 
@@ -45,13 +45,13 @@ const localConfig = {
 }
 
 const devConfig = {
-  baseURL: 'https://friday-dev.storelink.io',
+  baseURL: 'https://dev.dongholab.com',
   timeout: 2500,
   headers: { 'Content-Type': 'application/json' }
 }
 
 const prodConfig = {
-  baseURL: 'https://friday.storelink.io',
+  baseURL: 'https://dongholab.com',
   timeout: 2500,
   headers: { 'Content-Type': 'application/json' }
 }
